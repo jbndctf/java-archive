@@ -189,6 +189,9 @@ public class DoublyLinkedList<T> {
       current = current.getNext();
       current_index++;
     }
+    if (!current) {
+      return false;
+    }
     return this.remove(current_index) == data;
   }
 
