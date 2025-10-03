@@ -192,7 +192,7 @@ public class DoublyLinkedList<T> {
     if (!current) {
       return false;
     }
-    return this.remove(current_index) == data;
+    return this.remove(current_index).compareTo(data);
   }
 
   public void clear() {
